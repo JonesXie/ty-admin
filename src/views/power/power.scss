@@ -1,0 +1,132 @@
+.power-pg{
+  .blue{color: #4c8afd;}
+  .red{ color: #f73b42;}
+  .green{color: #56b987;}
+  .yellow{ color:#fd964c;}
+  td.cell{ color:#636c89; }
+  /* bar,title */
+.role-bar {
+    padding: 0 50px 18px;
+    line-height: 28px;
+    position: relative; 
+    font-size: 0;
+    &>*{
+        margin-top:18px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .bar-r{
+      position: absolute;    
+      right:50px;
+    }
+    .title{
+      color: #333;
+      font-size: 14px;
+      label{
+        font-weight: bold;
+      }
+      &+.title{
+          margin-left: 30px;
+      }
+    }
+    .bar-title{
+        font-size: 16px;
+        color: #333;
+        font-weight: bold;
+        margin-right: 40px;
+        vertical-align: middle;
+    }
+    
+  }
+  /* 权限列表 */
+  .power-list-i {
+    padding: 5px 20px 5px 0;
+    line-height: 20px;
+    color: #636c89;
+    word-break: keep-all;
+    display: inline-block;
+    width: 150px;
+    font-size: 14px;
+    i {
+      font-size: 16px;
+      color: #56b987;
+      vertical-align: middle;
+      padding-right: 6px;
+    }
+  }
+
+  /* 修改权限 */
+  .power-form{
+    .pl40{
+      padding-left: 40px;
+    }
+     th {
+        background-color: #fff;      
+        border-bottom: 2px solid #E2E5ED; 
+        font-weight: bold;
+        color: #333;
+        font-size: 14px;    
+        line-height: 50px;
+        text-align: center;
+        &.tl{
+          text-align: left;
+        }
+      }
+      tbody{
+        .step-row{
+          height: 20px;
+        }
+        .tr-th{
+          td{
+            background-color: #F3F3F3;
+          }
+        }
+        .tr-th,.tr-td{
+          td{            
+            height: 50px;
+            line-height: 50px; 
+            text-align: center;
+            border-bottom: 1px solid #E2E5ED;
+            &.tl{
+              text-align: left;
+            }
+            &.th-title{
+              font-weight: bold;
+            }
+            &.th-title,&.num{
+              padding-left: 40px;
+            }           
+          }
+        }
+      }
+      /* 菜单管理 */
+      
+      &.menu-tb,.menu-table{             
+        .tr-td td{
+          color: #636c89;
+          a{
+            &:hover{
+              color: #4c8afd;
+              text-decoration: underline;
+            }
+          }
+        }
+        .tr-th{
+          td{
+            color: #333;
+            &.th-title{
+              padding-left: 0;
+            }
+          }         
+        }
+        .td-icon{
+          i{
+            font-size: 28px;
+            color:#9FA1A7;
+            vertical-align: middle;
+          }
+        }
+      }
+  }
+  
+}

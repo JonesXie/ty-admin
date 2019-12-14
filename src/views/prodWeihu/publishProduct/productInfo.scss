@@ -1,0 +1,215 @@
+$labelW:140px;
+
+.b-w {
+  .prod-info-body {
+    .el-form-item {
+      margin-bottom: 20px;
+
+      .el-form-item__label {
+        width: $labelW;
+        text-align: right;
+        display: inline-block;
+        color: #333;
+        font-size: 14px;
+      }
+
+      .item-con {
+        margin-left: $labelW;
+      }
+
+      .el-form-item__error {
+        position: relative;
+        top: auto;
+        left: auto;
+        display: inline-block;
+        padding-left: 15px;
+      }
+
+      &.pro-img-up {
+        .voucher-uploader {
+          display: inline-block;
+          margin: 0 18px 0 0;
+
+          .el-upload {
+            line-height: 98px;
+          }
+
+          .el-upload,
+          .el-upload-list--picture-card .el-upload-list__item {
+            width: 100px;
+            height: 100px;
+          }
+        }
+
+        .el-form-item__error {
+          margin-left: $labelW;
+          padding: 0
+        }
+      }
+
+      &.m-detail {
+        .el-form-item__error {
+          margin-left: $labelW;
+          padding: 0
+        }
+
+        .m-detail-box {
+          width: 375px;
+          height: 667px;
+          border: 1px solid #ddd;
+          margin-left: $labelW;
+          position: relative;
+
+          .m-detail-body {
+            padding: 12px;
+            overflow-y: auto;
+            height: 615px;
+            margin: 0 0 50px;
+          }
+
+          .item-con {
+            margin: 0;
+
+            .voucher-uploader {
+              position: static !important;
+            }
+          }
+
+          .el-upload {
+            position: absolute;
+            width: auto;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 99;
+            height: 50px;
+            line-height: 50px;
+            border: none;
+            font-size: 32px;
+            text-align: center;
+            color: #8c939d;
+            background-color: #f3f3f3;
+
+            i {
+              font-size: 24px;
+              color: inherit;
+            }
+
+            .el-icon-plus:after {
+              content: "添加图片";
+              font-size: 16px;
+              vertical-align: middle;
+              padding-left: 10px;
+            }
+          }
+
+          .el-upload-list--picture-card .el-upload-list__item {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;
+            border-radius: 0;
+          }
+        }
+        .el-upload-list--picture-card .el-upload-list__item{
+          border:none
+        }
+      }
+
+
+
+    }
+
+    .xsh-con {
+      .el-form-item {
+        .el-form-item__label {
+          width: auto;
+        }
+      }
+    }
+  }
+
+  /* 商品属性 */
+  .attr-form {
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 25px 20px 3px;
+
+    .el-form-item {
+      width: 40%;
+      margin-bottom: 20px;
+
+      .el-form-item__label {
+        width: 120px;
+        text-align: right;
+        display: inline-block;
+        color: #666;
+        float: left;
+      }
+
+      .el-form-item__content,
+      .el-select,
+      .el-date-editor.el-input,
+      .el-date-editor.el-input__inner {
+        width: 300px;
+      }
+
+      .el-select .el-input--suffix .input-inner {
+        height: 34px !important;
+      }
+    }
+  }
+
+  /* 商品规格 */
+  /* 颜色图片上传 */
+  .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    width: 34px;
+    height: 34px;
+    border-radius: 2px;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* 颜色 */
+  .color-item .el-checkbox__label {
+    display: none;
+  }
+
+  /* 富文本 */
+  #editor {
+    z-index: 20;
+    position: relative;
+  }
+
+  .edui-editor-iframeholder {
+    height: 300px;
+  }
+
+  .afterSale-con {
+    .el-checkbox {
+      display: block;
+      margin-left: 0;
+
+      .el-checkbox__label {
+        font-size: 12px;
+        color: #333;
+      }
+    }
+  }
+
+  .elFormUEditor .el-form-item__content {
+    line-height: 20px;
+
+    .el-form-item__error {
+      margin-left: $labelW;
+      padding: 0
+    }
+  }
+
+  .elFormUEditor .pro-img-up .item-con {
+    margin-left: 20px;
+  }
+}
